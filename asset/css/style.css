@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*リセットCSS*/
 /*!
  * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -330,5 +332,12 @@ template {
 
 [hidden] {
   display: none !important;
+}
+
+/*共通部分*/
+body {
+  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
