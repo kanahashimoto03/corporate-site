@@ -5,11 +5,75 @@
 
 /*共通部分*/
 
-body{
-  font-family: 'Noto Serif', serif;
-  font-family: 'Noto Serif JP', serif;
+html{
+  font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size:20px;
 }
+
+ul{
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+/*Header*/
+
+.header{
+  background-color:#282F35;
+  width: 100%;
+  opacity: 1;
+
+  &__inner{
+    padding: 19px 120px;
+  }
+
+  &__cat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+  }
+
+  &__navi{
+    text-align: center;
+  }
+
+  &__navi__list{
+    display: flex;
+    list-style: none;
+  }
+
+
+  &__navi__item{
+    margin-right: 30px;
+
+    &:nth-child(4){
+      margin-right: 0;
+    }
+
+   a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  }
+
+  .hamburger__btn{
+    display: none;
+  }
+
+
+}
+
+
+
 
 
 
