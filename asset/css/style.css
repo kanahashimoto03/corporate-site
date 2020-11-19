@@ -335,9 +335,73 @@ template {
 }
 
 /*共通部分*/
-body {
-  font-family: 'Noto Serif', serif;
-  font-family: 'Noto Serif JP', serif;
+html {
+  font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 20px;
+}
+
+ul {
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+/*Header*/
+.header {
+  background-color: #282F35;
+  width: 100%;
+  opacity: 1;
+}
+
+.header__inner {
+  padding: 19px 120px;
+}
+
+.header__cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo a {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.header__navi {
+  text-align: center;
+}
+
+.header__navi__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header__navi__item {
+  margin-right: 30px;
+}
+
+.header__navi__item:nth-child(4) {
+  margin-right: 0;
+}
+
+.header__navi__item a {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.header .hamburger__btn {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
