@@ -19,8 +19,11 @@ ul{
 
 .header{
   background-color:#282F35;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  opacity: 1;
+  z-index: 1;
 
   &__inner{
     padding: 19px 120px;
@@ -71,6 +74,38 @@ ul{
 
 
 }
+
+/* mainFv */
+
+.mainFv{
+  position: relative;
+  background-image: url(../images/fv-bgi_01@2x.jpg);
+  background-size: cover;
+  height: 100vh;
+  
+  &__text{
+    position: absolute;
+    bottom: 177px;
+    left: 120px;
+    color: #FFFFFF;
+
+    &__en{
+      font-size: 70px;
+      font-weight: bold;
+      margin-bottom: 31px;
+    }
+
+    &__jp{
+      font-size: 40px;
+
+    }
+  }
+
+  
+}
+
+
+
 
 
 
