@@ -336,8 +336,11 @@ template {
 
 /*共通部分*/
 html {
-  font-family: 'Noto Serif','Noto Serif JP', serif;
   font-size: 20px;
+}
+
+body {
+  font-family: 'Noto Serif','Noto Serif JP', serif;
 }
 
 ul {
@@ -502,6 +505,9 @@ ul {
 .concept__subtitle {
   text-align: center;
   height: 95px;
+  font-size: 30px;
+  color: #171717;
+  margin-bottom: 60px;
 }
 
 .concept__cat {
@@ -528,7 +534,7 @@ ul {
 }
 
 /* Works */
-.bg {
+.work-bg {
   background-image: url(../images/works-bgi@2x.jpg);
   background-position: center;
   background-size: cover;
@@ -609,5 +615,18 @@ ul {
   background-color: rgba(40, 47, 53, 0.7);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+/* contact */
+.contact-bg {
+  background-image: url(../images/contact-bgi@2x.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact__text {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
