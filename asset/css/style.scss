@@ -40,6 +40,20 @@ ul{
   }
 }
 
+.text-right{
+  text-align: end;
+}
+
+.text-white{
+  color: #FFFFFF;
+
+  &::after{
+    background-color: #FFFFFF;
+  }
+}
+
+
+
 .section__inner{
   max-width: 1100px;
   margin: 0 auto;
@@ -53,6 +67,19 @@ ul{
   opacity: .05;
 }
 
+.btn{
+  width: 235px;
+  display: block;
+  background-color: #F7D43F;
+  padding: 19px 0;
+  border-radius: 30px;
+  margin: 0 auto 70px auto;
+  
+  &:hover{
+    opacity: .7;
+    transition: .3 ease;
+  }
+}
 
 /*Header*/
 
@@ -163,6 +190,37 @@ ul{
     padding-right: 220px;
   }
 }
+
+/* Works */
+
+.bg{
+  background-image: url(../images/works-bgi@2x.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.card__item{
+  margin-right: 20px;
+  background-color: #fff;
+
+  &:nth-child(3){
+    margin-right: 0;
+  }
+
+  &__text{
+    font-size: 16px;
+
+  }
+}
+
+
 
 
 
