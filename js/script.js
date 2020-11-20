@@ -1,3 +1,5 @@
+//スクロールヘッダー
+
 $(function(){
   var $win = $(window),
       $fv = $('.mainFv'),
@@ -17,7 +19,7 @@ $(function(){
 });
 
 
-
+//fvスライダー
   $('.slider').slick({
     autoplay:true,
     autoplaySpeed: 2000,
@@ -25,4 +27,16 @@ $(function(){
     fade: true,
     cssEase: 'linear'
   });
+
+//ハンバーガーメニュー
+
+$('.hamburger__btn').on('click', function(){
+  $('.header__navi').fadeToggle(300);
+  $(this).toggleClass('cross');
+  $('body').toggleClass('noscroll');
+});
+
+
+
+
 
