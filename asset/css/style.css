@@ -415,12 +415,13 @@ ul {
 
 /*Header*/
 .header {
-  background-color: #282F35;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .header__inner {
@@ -474,6 +475,14 @@ ul {
 
 .header .hamburger__btn {
   display: none;
+}
+
+.header.fixed {
+  position: fixed;
+  background-color: #282f35;
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 /* mainFv */
@@ -680,7 +689,6 @@ ul {
   }
   /* ヘッダー */
   .header {
-    background-color: #282F35;
     position: absolute;
     top: 0;
     left: 0;

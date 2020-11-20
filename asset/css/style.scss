@@ -88,12 +88,12 @@ ul{
 /*Header*/
 
 .header{
-  background-color:#282F35;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+  transition: .3s;
 
   &__inner{
     padding: 19px 120px;
@@ -140,6 +140,13 @@ ul{
 
   .hamburger__btn{
     display: none;
+  }
+
+  &.fixed{
+    position: fixed;
+    background-color: #282f35;
+    width: 100%;
+    transition: .3s;
   }
 
 
@@ -361,7 +368,6 @@ ul{
 
 
 .header{
-  background-color:#282F35;
   position: absolute;
   top: 0;
   left: 0;
