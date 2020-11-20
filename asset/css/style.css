@@ -488,7 +488,6 @@ ul {
 /* mainFv */
 .mainFv {
   position: relative;
-  background-image: url(../images/fv-bgi_01@2x.jpg);
   background-size: cover;
   height: 100vh;
   background-position: center;
@@ -511,8 +510,16 @@ ul {
   font-size: 40px;
 }
 
+.mainFv .slick-slider {
+  padding: 0;
+}
+
 .mainFv .sp__br {
   display: none;
+}
+
+.slick-arrow {
+  display: none !important;
 }
 
 /* Concept */

@@ -9,10 +9,20 @@ $(function(){
       if($win.width() > 760){
         if( value > fvHeight ){
           $header.addClass(fixedClass);
-        }
       }else{
         $header.removeClass(fixedClass);
       }
+      }
     });
-
 });
+
+
+
+  $('.slider').slick({
+    autoplay:true,
+    autoplaySpeed: 2000,
+    speed:1000,
+    fade: true,
+    cssEase: 'linear'
+  });
+
