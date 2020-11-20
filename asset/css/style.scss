@@ -13,6 +13,11 @@ body{
   font-family: 'Noto Serif','Noto Serif JP', serif;
 }
 
+
+body.noscroll{
+  overflow: hidden;
+}
+
 ul{
   margin-bottom: 0;
   margin-top: auto;
@@ -88,12 +93,12 @@ ul{
 /*Header*/
 
 .header{
-  background-color:#282F35;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+  transition: .3s;
 
   &__inner{
     padding: 19px 120px;
@@ -142,6 +147,13 @@ ul{
     display: none;
   }
 
+  &.fixed{
+    position: fixed;
+    background-color: #282f35;
+    width: 100%;
+    transition: .3s;
+  }
+
 
 }
 
@@ -149,7 +161,6 @@ ul{
 
 .mainFv{
   position: relative;
-  background-image: url(../images/fv-bgi_01@2x.jpg);
   background-size: cover;
   height: 100vh;
   background-position: center;
@@ -171,9 +182,18 @@ ul{
     }
   }
 
+  .slick-slider{
+    padding: 0;
+  }
+
   .sp__br{
     display: none;
   }
+}
+
+.slick-arrow{
+  display: none !important;
+  
 }
 
 /* Concept */
@@ -361,7 +381,6 @@ ul{
 
 
 .header{
-  background-color:#282F35;
   position: absolute;
   top: 0;
   left: 0;
@@ -430,6 +449,8 @@ ul{
     right: 4vw;
     background-color: transparent;
     border: none;
+
+    
   }
 
   .bar__top,
@@ -439,6 +460,7 @@ ul{
     height: 3px;
     background-color: #fff;
     margin-bottom: 8px;
+    transition: .3s;
   }
 
   .bar__bottom{
@@ -446,7 +468,24 @@ ul{
     width: 30px;
     height: 3px;
     background-color: #fff;
+    transition: .3s;
   }
+
+  .hamburger__btn.cross .bar__top{
+    transform: rotate(45deg) translate(8px,8px);
+    transition: .3s;
+  }
+  .hamburger__btn.cross .bar__mid{
+    opacity: 0;
+    transition: .3s;
+  }
+  .hamburger__btn.cross .bar__bottom{
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+  }
+
+
+
 
 
 }
