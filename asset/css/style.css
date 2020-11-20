@@ -482,6 +482,7 @@ ul {
   background-image: url(../images/fv-bgi_01@2x.jpg);
   background-size: cover;
   height: 100vh;
+  background-position: center;
 }
 
 .mainFv__text {
@@ -499,6 +500,10 @@ ul {
 
 .mainFv__text__jp {
   font-size: 40px;
+}
+
+.mainFv .sp__br {
+  display: none;
 }
 
 /* Concept */
@@ -628,5 +633,252 @@ ul {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 40px;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 760px) {
+  /*共通部分 */
+  .section__container {
+    padding: 100px 0 40px;
+  }
+  .section__inner {
+    padding: 0 15px;
+  }
+  .section__bottom {
+    font-size: 40px;
+    padding: 0 15px;
+  }
+  .btn {
+    margin: 0 auto 40px auto;
+  }
+  .section__title {
+    max-width: 1000px;
+    color: #282F35;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+  }
+  .section__title::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #282F35;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .text-right {
+    text-align: end;
+  }
+  .text-white {
+    color: #FFFFFF;
+  }
+  .text-white::after {
+    background-color: #FFFFFF;
+  }
+  /* ヘッダー */
+  .header {
+    background-color: #282F35;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .header__inner {
+    padding: 30px 5px 0;
+  }
+  .header__cat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__logo a {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+  }
+  .header__navi {
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #282f35;
+  }
+  .header__navi__list {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navi__item {
+    margin: 0 0 30px;
+  }
+  .header__navi__item:nth-child(4) {
+    margin-right: 0;
+  }
+  .header__navi__item a {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .header .hamburger__btn {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 4vw;
+    background-color: transparent;
+    border: none;
+  }
+  .header .bar__top,
+  .header .bar__mid {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 8px;
+  }
+  .header .bar__bottom {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+  }
+  /* mainFv */
+  .mainFv {
+    position: relative;
+    background-image: url(../images/fv-bgi_01@2x.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+  .mainFv__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .mainFv__text__en {
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 59px;
+  }
+  .mainFv__text__jp {
+    font-size: 30px;
+  }
+  .mainFv .sp__br {
+    display: block;
+  }
+  /* Concept */
+  .concept__subtitle {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+  .concept__cat {
+    display: block;
+  }
+  .concept__cat__text {
+    font-size: 16px;
+    width: 100%;
+  }
+  .concept__cat__img {
+    height: 150px;
+    width: 100%;
+    margin: 30px 0 40px 0;
+    padding: 0 15px;
+  }
+  .concept__cat__img > img {
+    width: 100%;
+    height: 100%;
+  }
+  /* works */
+  .work-bg {
+    background-image: url(../images/works-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card {
+    display: block;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  .card__item {
+    background-color: #fff;
+    margin: 0 0 30px 0;
+    height: 334px;
+  }
+  .card__item__img {
+    width: 100%;
+  }
+  .card__item__img > img {
+    width: 100%;
+  }
+  .card__item__text {
+    font-size: 16px;
+    padding: 25px 20px;
+  }
+  /* service */
+  .service__list {
+    display: block;
+    list-style: none;
+    padding: 0;
+  }
+  .service__item {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .service__item:nth-child(3) {
+    margin-bottom: 40px;
+  }
+  .service__item a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 250px;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .service__item a:hover {
+    background-color: rgba(40, 47, 53, 0.7);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
 }
 /*# sourceMappingURL=style.css.map */

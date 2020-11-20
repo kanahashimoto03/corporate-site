@@ -152,6 +152,7 @@ ul{
   background-image: url(../images/fv-bgi_01@2x.jpg);
   background-size: cover;
   height: 100vh;
+  background-position: center;
   
   &__text{
     position: absolute;
@@ -168,6 +169,10 @@ ul{
     &__jp{
       font-size: 40px;
     }
+  }
+
+  .sp__br{
+    display: none;
   }
 }
 
@@ -290,6 +295,307 @@ ul{
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 40px;
+}
+
+/* レスポンシブデザイン */
+
+@media screen and (max-width:760px){
+
+  /*共通部分 */
+
+  .section__container{
+    padding: 100px 0 40px;
+
+  }
+
+  .section__inner{
+    padding: 0 15px;
+  }
+
+  .section__bottom{
+    font-size: 40px;
+    padding: 0 15px;
+  }
+
+  .btn{
+    margin: 0 auto 40px auto;
+  }
+
+  .section__title{
+    max-width: 1000px;
+    color: #282F35;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+  
+    
+    &::after{
+      content: "";
+      width: 100px;
+      height: 5px;
+      background-color: #282F35;
+      margin-left: 30px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+
+.text-right{
+  text-align: end;
+}
+
+.text-white{
+  color: #FFFFFF;
+
+  &::after{
+    background-color: #FFFFFF;
+  }
+}
+  
+  
+  
+  /* ヘッダー */ 
+
+
+.header{
+  background-color:#282F35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  &__inner{
+    padding: 30px 5px 0;
+  }
+
+  &__cat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  &__logo a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+  }
+
+  &__navi{
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #282f35;
+  }
+
+  &__navi__list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+  }
+
+
+  &__navi__item{
+    margin: 0 0 30px;
+
+    &:nth-child(4){
+      margin-right: 0;
+    }
+
+   a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  }
+
+  .hamburger__btn{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 4vw;
+    background-color: transparent;
+    border: none;
+  }
+
+  .bar__top,
+  .bar__mid{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .bar__bottom{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+  }
+
+
+}
+
+
+
+ /* mainFv */
+
+
+.mainFv{
+  position: relative;
+  background-image: url(../images/fv-bgi_01@2x.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  
+  &__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+    &__en{
+      font-size: 37px;
+      font-weight: bold;
+      margin-bottom: 59px;
+    }
+
+    &__jp{
+      font-size: 30px;
+    }
+  }
+  .sp__br{
+    display: block;
+  }
+}
+
+  /* Concept */ 
+
+  .concept__subtitle{
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+  
+  .concept__cat{
+    display: block;
+  
+    &__text{
+      font-size: 16px;
+      width: 100%;
+      
+    }
+    &__img{
+      height: 150px;
+      width: 100%;
+      margin: 30px 0 40px 0;
+      padding: 0 15px;
+
+      > img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  /* works */ 
+
+
+  .work-bg{
+    background-image: url(../images/works-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card{
+    display: block;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+
+.card__item{
+  background-color: #fff;
+  margin: 0 0 30px 0;
+  height: 334px;
+
+  &__img{
+    width: 100%;
+
+    >img{
+      width: 100%;
+    }
+  }
+
+  &__text{
+    font-size: 16px;
+    padding: 25px 20px;
+
+
+  }
+}
+
+/* service */ 
+
+
+.service__list{
+  display: block; 
+  list-style: none;
+  padding: 0;
+}
+
+.service__item{
+
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+
+  &:nth-child(3){
+    margin-bottom: 40px;
+  }
+
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 250px;
+    transition: .3s;
+
+    &:hover{
+      background-color: rgba(40,47,53,.7);
+      transition: 0.3s ease;
+    }
+  }
+
+
+}
+
+
+
+  
 }
 
 
