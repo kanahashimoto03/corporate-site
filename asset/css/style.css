@@ -655,6 +655,22 @@ ul {
   margin-bottom: 40px;
 }
 
+/* footer */
+.footer {
+  height: 79px;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer__inner {
+  padding: 30px 0;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* レスポンシブデザイン */
 @media screen and (max-width: 760px) {
   /*共通部分 */
