@@ -317,6 +317,26 @@ ul{
   margin-bottom: 40px;
 }
 
+/* footer */
+
+.footer{
+  
+  height: 79px;
+  text-align: center;
+  width: 100vw;
+
+
+  &__inner{
+    padding: 30px 0;
+    
+  
+  }
+  &__text{
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
 /* レスポンシブデザイン */
 
 @media screen and (max-width:760px){
