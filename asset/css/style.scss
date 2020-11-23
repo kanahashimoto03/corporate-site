@@ -83,6 +83,7 @@ ul{
   padding: 19px 0;
   border-radius: 30px;
   margin: 0 auto 70px auto;
+  border: none;
   
   &:hover{
     opacity: .7;
@@ -335,6 +336,98 @@ ul{
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+/* コンタクトページ */
+
+.form__container{
+  padding: 100px 0 80px;
+}
+
+.form__list{
+  list-style: none;
+  max-width:700px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+}
+
+.form__item{
+  list-style: none;
+  margin-bottom: 25px;
+
+  &:nth-child(5){
+    margin-bottom: 0;
+  }
+}
+.form__label{
+  font-size: 16px;
+  display: block;
+  font-weight: bold;
+}
+
+.checkbox__item{
+  list-style: none;
+  font-size: 16px;
+}
+
+input,textarea{
+  resize: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #141414;
+  width: 100%;
+}
+
+.input-text{
+  padding: 0 8px;
+  line-height: 30px;
+}
+
+textarea{
+  height: 171px;
+  padding: 0 8px;
+  line-height: 30px;
+}
+
+.checkbox__list{
+  display: flex;
+  padding: 0;
+}
+
+.checkbox__item{
+  margin-right: 30px;
+}
+
+.checkbox label,
+.checkbox{
+  cursor: pointer;
+}
+
+.checkbox{
+  border: solid 1px #282f35;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.checkbox:checked{
+  background-color: #333;
+}
+.contact-page__container{
+  background-image: url(../images/contact-page-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 453px;
+  width: 100vw;
+}
+
+.contact-page__title{
+  color: #FFFFFF;
+  font-size: 60px; 
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;  
+  padding-top: 186px;
 }
 
 /* レスポンシブデザイン */
@@ -651,6 +744,33 @@ ul{
 
 
 }
+
+/*  コンタクトページ */ 
+
+  
+.contact-page__title{
+  color: #FFFFFF;
+  font-size: 30px; 
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;  
+  padding-top: 175px;
+}
+
+
+.contact-page__container{
+  background-image: url(../images/contact-page-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+  width: 100vw;
+}
+
+
+.checkbox__list{
+  display: block;
+}
+
 
 
 
